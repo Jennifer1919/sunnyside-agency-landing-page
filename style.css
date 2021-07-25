@@ -1,0 +1,370 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+.header{
+    width:100%;
+    padding: 30px 5% 200px;
+    background-image: url(images/mobile/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: relative;
+
+}
+#menu_icon:hover{
+    cursor: pointer;
+}
+.header_nav{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.header_nav ul{
+    list-style: none;
+    position: absolute;
+    width:90%;
+    text-align: center;
+    background-color: white;
+    top:100px;
+    padding:15px 0px;
+    line-height: 50px;
+    font-size: 18px;
+    display: none;
+    
+}
+
+.header_nav ul li a{
+    text-decoration: none;
+    color:hsl(232, 10%, 55%);
+}
+
+
+
+.header_nav ul li button{
+    width: 100px;
+    padding:10px 10px;
+    border-radius: 20px;
+    border:none;
+    background-color: hsl(51, 100%, 49%);
+    font-family: 'Fraunces', serif;
+}
+.header_nav ul li button:hover{
+    cursor: pointer;
+}
+
+.header h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color:white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    letter-spacing:10px;
+}
+
+.image{
+    width: 100%;
+}
+
+    .text_div{
+        width: 100%;
+        text-align: center;
+        padding:40px 10px ;
+    }
+
+.text_div h2{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 30px;
+    font-size: 2em;  
+
+}
+
+.text_div p{
+   color:hsl(232, 10%, 55%);
+   line-height: 25px;
+   margin-bottom:30px ;
+}
+
+.text_div a{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 27%, 19%);
+}
+
+.text_image_div {
+    padding: 500px 10px 40px 10px;
+    text-align: center;
+}
+
+.text_image_div h2{
+    font-family: 'Fraunces', serif;
+    margin:20px; 
+}
+.text_image_div p{
+    line-height: 25px;
+}
+
+.text_image_div#graphic_design{
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:hsl(167, 40%, 24%);
+}
+
+
+
+.text_image_div#photography{
+    background-image: url(images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: hsl(198, 62%, 26%);
+
+}
+
+.client_testimonials{
+    text-align: center;
+    margin: 40px 30px;
+}
+
+.client_testimonials h3{
+    font-family: 'Fraunces', serif;
+    color:hsl(210, 4%, 67%);
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 1em;
+}
+
+.client{
+    margin-top: 60px;
+
+}
+
+.client img{
+    border-radius: 100px;
+    width: 50px;
+ 
+}
+.client p.comment{
+    color:hsl(213, 9%, 39%);
+    margin: 20px 0px;
+    line-height: 25px;
+}
+
+.client .name{
+    color:hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 10px; 
+}
+
+.client .job{
+    color:hsl(210, 4%, 67%);
+}
+
+.image_gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: inline;
+    flex-wrap: wrap;
+}
+
+.image_gallery img{
+    width: 50%;
+}
+
+.footer{
+    background-color: hsl(168, 34%, 41%);
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer svg#footer_logo{
+    fill:blue;
+}
+
+.footer_nav{
+    margin: 30px 0px;
+    width: 100%;
+    color: hsl(167, 40%, 24%)
+}
+.footer_nav ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.footer_nav ul li {
+    list-style: none;
+    
+}
+.footer_nav ul li a{
+    color:hsl(167, 40%, 24%);
+    text-decoration: none;
+}
+
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a svg{
+    fill :#2c7566;
+}
+
+
+@media only screen and (min-width:750px){
+
+    body{
+        display:grid;
+        grid-template-columns: 25% 25% 25% 25% ;
+       
+    }
+
+    .header{
+        grid-column: 1/5;
+        background-image: url(images/desktop/image-header.jpg);
+        
+    }
+
+    #menu_icon{
+        display: none;
+    }
+
+    .header_nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        width:400px;
+        text-align: unset;
+        background-color: transparent;
+        top:unset;
+        padding:0px 0px;
+        line-height: unset;
+        font-size: 18px;
+        
+    }
+    .header_nav ul li a{
+        font-size: 15px;
+        color:white;
+    }
+
+    .header_nav ul li button{
+        background-color: white;
+        font: 15px;
+    }
+    .header_nav ul li button:hover{
+        background-color: hsl(0, 0%, 100%, 0.2);
+        color:hsl(0, 0%, 100%);
+        
+    }
+
+    .text_div{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15%;
+        
+    }
+
+    #transform_brand_text{
+        grid-column: 1/3;
+        grid-row: 2/3;
+
+    }
+    #image_egg{
+        grid-column: 3/5;
+        width:100%;
+
+    }
+    #stand_out_audience_text{
+        grid-column: 3/5;
+    }
+    #image_cup{
+        grid-column: 1/3;
+    }
+    .text_image_div {
+        padding: 300px 10px 40px 10px;
+        text-align: center;
+    }
+    #graphic_design{
+        grid-column: 1/3;
+
+    }
+    .text_image_div#graphic_design{
+        background-image: url(images/desktop/image-graphic-design.jpg);
+        background-position-y: center;
+        background-size: cover;
+        
+    }
+    #photography{
+        grid-column: 3/5;
+    }
+
+    .text_image_div#photography{
+        background-image: url(images/desktop/image-photography.jpg);
+        background-position-y: center;
+        background-size: cover;
+   
+    
+    }
+    .client_testimonials{
+        grid-column: 1/5;
+        margin:100px 10%;
+
+    }
+    .client{
+        margin: 0px 20px;;
+    }
+
+    .testimonials_wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .image_gallery{
+        grid-column: 1/5;
+    }
+    .image_gallery img{
+        width: 25%;
+    }
+    .footer{
+        grid-column: 1/5;
+    }
+    .footer_nav{
+        width:30%
+    }
+    .footer_nav ul li a:hover{
+        color:white;
+        
+    }
+    .social-media{
+        width: 20%;
+    }
+
+    .social-media a svg:hover{
+        fill:white;
+    }
+
+
+
+
+
+}
